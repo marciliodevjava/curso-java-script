@@ -22,3 +22,4 @@ console.log("Resultado triplicado =", resultadoTriplicado);
 resultadoTriplicado = resultadoTriplicado + 5;
 
 console.log("Resultado triplicado + 5 =", resultadoTriplicado);
+console.log(typeof(primeiroNumero));
