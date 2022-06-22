@@ -10,3 +10,5 @@ console.log(`${umaString} em um lindo dia.`);
 console.log(umaString.indexOf("Um"));
 console.log(umaString.lastIndexOf("t"));
 console.log(umaString.replace("texto","TEXTO"));
+console.log(umaString.length);// Retorna exatamente o tamanho.
+console.log(umaString.slice(2,9));
