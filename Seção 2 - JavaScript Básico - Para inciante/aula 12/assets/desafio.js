@@ -1,5 +1,7 @@
-let num1 = parseInt(prompt("Digite um número:"));
-let num2 = parseInt(prompt("Digite outro número:"));
+let num1 = prompt("Digite um número:");
+let num2 = prompt("Digite outro número:");
 
-let soma = num1 + num2;
-alert(`${num1} + ${num2} = ${soma}`);
+num1 = Number(num1);
+num2 = Number(num2);
+
+alert(`${num1} + ${num2} = ${num1 + num2}`);
