@@ -2,38 +2,13 @@ const h1 = document.querySelector('.container h1');
 const data = new Date();
 
 function getDiaSemanaTexto(diaSemana) {
-    let diaSemanaTexto;
-
-    switch (diaSemana) {
-        case 0:
-            diaSemanaTexto = 'Domingo';
-            return diaSemanaTexto;
-        case 1:
-            diaSemanaTexto = 'Segunda-feira';
-            return diaSemanaTexto;
-        case 2:
-            diaSemanaTexto = 'Terça-feira';
-            return diaSemanaTexto;
-        case 3:
-            diaSemanaTexto = 'Quarta-feira';
-            return diaSemanaTexto;
-        case 4:
-            diaSemanaTexto = 'Quinta-feira';
-            return diaSemanaTexto;
-        case 5:
-            diaSemanaTexto = 'Sexta-feira';
-            return diaSemanaTexto;
-        case 6:
-            diaSemanaTexto = 'Sábado';
-            return diaSemanaTexto;
-        default:
-            diaSemanaTexto = 'Domingo';
-            return diaSemanaTexto;
-    }
+    const diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo'];
+    return diasSemana[diaSemana];
 }
 
 function getNomeMes(numeroMes) {
     const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    return meses[numeroMes];
 }
 
 function zeroAEsquerda(num) {
