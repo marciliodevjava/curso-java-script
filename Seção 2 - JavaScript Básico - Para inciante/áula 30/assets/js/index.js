@@ -1,3 +1,24 @@
+const h1 = document.querySelector('.container h1');
+const data = new Date();
+
+function zeroAEsquerda(num) {
+    return num >= 10 ? num : `0${num}`;
+}
+
+function formataData(data) {
+    const dia = zeroAEsquerda(data.getDate());
+    const mes = zeroAEsquerda(data.getMonth() + 1);
+    const ano = zeroAEsquerda(data.getFullYear());
+    const hora = zeroAEsquerda(data.getHours());
+    const min = zeroAEsquerda(data.getMinutes());
+    const seg = zeroAEsquerda(data.getSeconds());
+
+    return `Data:${dia}/${mes}/${ano} \nHora:${hora}:${min}:${seg}`;
+}
+
+const dataBrasil = formataData(data);
+console.log(dataBrasil);
+
 function getDiaSemanaTexto(diaSemana) {
     let diaSemanaTexto;
 
@@ -29,8 +50,4 @@ function getDiaSemanaTexto(diaSemana) {
     }
 }
 
-const data = new Date('1994-11-01 17:20:56');
-const diaSemana = data.getDay();
-const diaSemanaTexto = getDiaSemanaTexto(diaSemana);
-
-console.log(diaSemana, diaSemanaTexto);
+h1.innerHTML = dataBrasil;
