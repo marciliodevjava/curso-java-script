@@ -6,4 +6,12 @@ const elementos = [
     { tag: 'section', texto: 'Frase 4' },
 ];
 
-conteiner.innerHTML = conteiner;
+const div = document.createElement('');
+for (let i = 0; i < elementos.length; i++) {
+    let { tag, texto } = elementos[i];
+    let tagCriada = document.createElement(tag);
+    tagCriada.innerHTMLcc = texto;
+    div.appendChild(tag);
+}
+
+conteiner.appendChild(div);
